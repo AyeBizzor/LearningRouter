@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 export const PanelCtrl = () => {
   return (
@@ -8,10 +8,10 @@ export const PanelCtrl = () => {
         <p>Elige una opción</p>
         <nav>
          <ul>
-            <li><a href='/panelctrl/inicio' >Inicio</a></li>
-            <li><a href='/panelctrl/crear-articulos' >Crear artículos</a></li>
-            <li><a href='/panelctrl/gestion-usuarios' >Gestión de usuarios</a></li>
-            <li> <a href='/panelctrl/acerca-de'> Acerca de... </a> </li>
+            <li><NavLink to='/panelctrl/inicio' >Inicio</NavLink></li>
+            <li><NavLink to='/panelctrl/crear-articulos' >Crear artículos</NavLink></li>
+            <li><NavLink to='/panelctrl/gestion-usuarios' >Gestión de usuarios</NavLink></li>
+            <li> <NavLink to='/panelctrl/acerca-de'> Acerca de... </NavLink> </li>
          </ul>
         </nav>
     <div>
